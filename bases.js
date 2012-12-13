@@ -1,6 +1,6 @@
 
 
-require(['../arcade', 'missle', 'silo', 'bullet', 'TraceKit'], function(arcade, missle, silo, bullet, TraceKit){
+require(['./arcade/arcade', 'missle', 'silo', 'bullet', 'TraceKit'], function(arcade, missle, silo, bullet, TraceKit){
 	TraceKit.report.subscribe(function(stackInfo) { 
 		console.log(stackInfo);
 	});

@@ -5,7 +5,7 @@
  * The bullet module.
  * @author 
  */
-define(['../arcade'], function(arcade) {
+define(['./arcade/arcade'], function(arcade) {
 	var bullet = function(x, y){
 		var self = this;
 		this.age = 0;

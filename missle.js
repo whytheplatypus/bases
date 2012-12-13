@@ -5,7 +5,7 @@
  * The missle module.
  * @author 
  */
-define(['../arcade'], function(arcade) {
+define(['./arcade/arcade'], function(arcade) {
   var missle = function(x, y, speed){
 		var self = this;
 		this.uid = _.uniqueId('missle_');

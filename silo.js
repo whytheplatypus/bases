@@ -5,7 +5,7 @@
  * The silo module.
  * @author 
  */
-define(['../arcade', './bullet'], function(arcade, bullet) {
+define(['./arcade/arcade', './bullet'], function(arcade, bullet) {
 	var silo = function(x, y){
 		var self = this;
 		this.uid = _.uniqueId('silo_');
