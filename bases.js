@@ -4,7 +4,7 @@ require(['./arcade/arcade', 'missle', 'silo', 'bullet', 'TraceKit'], function(ar
 	TraceKit.report.subscribe(function(stackInfo) { 
 		console.log(stackInfo);
 	});
-	var mc = new arcade.Game({fullscreen:true, ctx:'../canvas'},function(){;
+	var mc = new arcade.Game({fullscreen:true, ctx:'./arcade/canvas'},function(){;
 		var ctx = mc.ctx;
 
 		missle.prototype.draw = function() {
