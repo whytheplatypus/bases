@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Arcade Test Game</title>
+    <script type="text/javascript" src="vendor/underscore.js"></script>
+    <script type="text/javascript" src="vendor/screenfull.js"></script>
+    <script>
+      var require = {
+        waitSeconds: 15,
+        urlArgs : "bust=" +  (new Date()).getTime(),
+        paths : {
+          'TraceKit':'../vendor/tracekit'
+        },
+        shim:{
+          'TraceKit':{
+            exports: 'TraceKit'
+          }
+        },
+        deps : ['bases']
+      };
+    </script>
+    <script type="text/javascript" src="components/requirejs/require.js"></script>
+    <style>
+      html, body{
+        margin:0px;
+        padding:0px;
+      }
+      canvas{
+        margin:0px;
+        padding:0px;
+      }
+    </style>
+  </head>
+  <body>
+    
+  </body>
+</html>
