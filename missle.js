@@ -1,11 +1,21 @@
 "use strict";
 
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register arcade.
+        define('missle', ['./arcade/arcade'], factory);
+    } else {
+        // Browser globals
+        root.missle = factory(root.arcade);
+    }
+}(window,
+
 /**
  * missle
  * The missle module.
  * @author 
  */
-define(['./arcade/arcade'], function(arcade) {
+function(arcade) {
   var missle = function(x, y, speed){
 		var self = this;
 		this.uid = _.uniqueId('missle_');

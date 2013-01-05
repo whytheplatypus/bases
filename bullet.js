@@ -1,11 +1,19 @@
 "use strict";
-
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register arcade.
+        define('missle', ['./arcade/arcade'], factory);
+    } else {
+        // Browser globals
+        root.bullet = factory(root.arcade);
+    }
+}(window,
 /**
  * bullet
  * The bullet module.
  * @author 
  */
-define(['./arcade/arcade'], function(arcade) {
+ function(arcade) {
 	var bullet = function(x, y){
 		var self = this;
 		this.age = 0;
