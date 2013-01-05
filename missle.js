@@ -49,4 +49,4 @@ function(arcade) {
 	};
 
   return missle;
-});
+}));

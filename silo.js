@@ -81,4 +81,4 @@ function(arcade, bullet) {
 	}
 
   return silo;
-});
+}));
